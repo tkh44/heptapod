@@ -32,4 +32,21 @@ describe('heptapod', () => {
     expect(tree).toMatchSnapshot()
     expect(sheet).toMatchSnapshot()
   })
+
+  test('object styles', () => {
+    const cls3 = css({
+      fontSize: 16,
+      background: 'rgba(45, 213, 47, 0.11)',
+      color: 'aquamarine'
+    })({ backgroundColor: 'hotpink' })({
+      fontSize: 16,
+      background: 'rgba(0, 0, 0, 0.11)'
+    })
+
+    const tree = renderer
+      .create(<div className={cls3.toString()}>Basic</div>)
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+    expect(sheet).toMatchSnapshot()
+  })
 })

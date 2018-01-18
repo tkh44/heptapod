@@ -62,3 +62,66 @@ exports[`heptapod basic 2`] = `
   }
 }"
 `;
+
+exports[`heptapod object styles 1`] = `
+.glamor-0 {
+  font-size: 16px;
+  background: rgba(45,213,47,0.11);
+  color: aquamarine;
+}
+
+@media (min-width:420px) {
+  .glamor-0 {
+    background-color: hotpink;
+  }
+}
+
+@media (min-width:920px) {
+  .glamor-0 {
+    font-size: 16px;
+    background: rgba(0,0,0,0.11);
+  }
+}
+
+<div
+  className="glamor-0"
+>
+  Basic
+</div>
+`;
+
+exports[`heptapod object styles 2`] = `
+".css-4r6ctt {
+  font-size: 16px;
+  background: rgba(45,213,47,0.11);
+  color: aquamarine;
+}
+
+.css-a2d05i {
+  background-color: hotpink;
+}
+
+.css-aop3sx {
+  font-size: 16px;
+  background: rgba(0,0,0,0.11);
+}
+
+.css-1v9evw0 {
+  font-size: 16px;
+  background: rgba(45,213,47,0.11);
+  color: aquamarine;
+}
+
+@media (min-width:420px) {
+  .css-1v9evw0 {
+    background-color: hotpink;
+  }
+}
+
+@media (min-width:920px) {
+  .css-1v9evw0 {
+    font-size: 16px;
+    background: rgba(0,0,0,0.11);
+  }
+}"
+`;
