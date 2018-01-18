@@ -14,7 +14,7 @@ npm i heptapod -S
 yarn add heptapod
 ```
 
-===
+---
 
 ```javascript
 import createResponsiveCss from 'heptapod'
