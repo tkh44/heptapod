@@ -62,6 +62,22 @@ This will insert the following styles into the current Stylesheet emotion is usi
 }
 ```
 
+It works for both string and object based styles. The following object styles will output the same styles as the string variant above.
+
+```javascript
+const cls3 = css({
+  fontSize: 16,
+  background: 'rgba(45, 213, 47, 0.11)',
+  color: 'aquamarine'
+})({ backgroundColor: 'hotpink' })({
+  fontSize: 16,
+  background: 'rgba(0, 0, 0, 0.11)'
+})
+
+<div className={cls3.toString()}>Basic</div>
+```
+
+
 
 
 ## API
